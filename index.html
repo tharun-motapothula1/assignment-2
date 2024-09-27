@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Form Section -->
+    <section id="registration-form">
+        <h2>Employee Registration Form</h2>
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="">Select Department</option>
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+                <option value="Marketing">Marketing</option>
+            </select><br><br>
+            <label for="employee-id">Employee ID:</label>
+            <input type="number" id="employee-id" name="employee-id"><br><br>
+            <label for="profile-picture-url">Profile Picture URL:</label>
+            <input type="url" id="profile-picture-url" name="profile-picture-url"><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Employee List Section -->
+    <section id="employee-list">
+        <h2>Employee List</h2>
+        <ol id="employee-list-ol">
+            <!-- List items will be generated dynamically -->
+        </ol>
+    </section>
+
+    <!-- Employee Details Table -->
+    <section id="employee-details-table">
+        <h2>Employee Details Table</h2>
+        <table id="employee-details-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody id="employee-details-tbody">
+                <!-- Table rows will be generated dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Embedded Map Section -->
+    <section id="embedded-map">
+        <h2>Company Location</h2>
+        <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300"></iframe>
+    </section>
+
+    <!--<script src="script.js"></script>-->
+</body>
+</html>
